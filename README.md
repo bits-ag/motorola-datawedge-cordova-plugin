@@ -1,3 +1,5 @@
+ **⚠️ NOTICE:** This project is no longer actively maintained.
+ 
 Cordova Motorola DataWedge Plugin
 ============
 
