@@ -63,7 +63,11 @@ public class DataWedgeIntentHandler {
 
             Log.i(TAG, "Register for Datawedge intent: " + dataWedgeAction);
 
-            applicationContext.registerReceiver(dataReceiver, new IntentFilter(dataWedgeAction), applicationContext.RECEIVER_EXPORTED);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) { // API 33+
+                applicationContext.registerReceiver(dataReceiver, new IntentFilter(dataWedgeAction), Context.RECEIVER_EXPORTED);
+            } else {
+                applicationContext.registerReceiver(dataReceiver, new IntentFilter(dataWedgeAction));
+            }
 
             enableScanner(true);
             hasInitialized = true;
