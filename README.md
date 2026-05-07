@@ -30,7 +30,7 @@ Special configuration for option 2:
 <h3>To Use:</h3>
 
 1) First, you need to "activate" the plugin and OPTIONALLY tell it what intent to listen for.  Default is _"com.bluefletch.motorola.datawedge.ACTION"_
-```
+```javascript
    document.addEventListener("deviceready", function(){ 
       if (window.datawedge) {
       	 datawedge.start(); //uses default
@@ -40,7 +40,7 @@ Special configuration for option 2:
 ```
 
 2) Register for callbacks for barcode scanning and/or magnetic stripe reads:
-```
+```javascript
    document.addEventListener("deviceready", function(){ 
        ...
        datawedge.registerForBarcode(function(data){
