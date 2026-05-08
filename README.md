@@ -1,17 +1,13 @@
  **⚠️ NOTICE:** This project is no longer actively maintained.
  
-Cordova Motorola DataWedge Plugin
-============
+#### Cordova Motorola DataWedge Plugin
 
 This is a Cordova/Phonegap plugin to interact with Motorola ruggedized devices' Barcode Scanners and Magnetic Stripe Readers (eg, ET1, MC40, TC55).  The plugin works by interacting with the "DataWedge" application configured to output scan and magstripe events.
 
-=============
 
 This plugin is compatible with plugman.  To install, run the following from your project command line: 
 ```$ cordova plugin add https://github.com/BlueFletch/motorola-datawedge-cordova-plugin.git```
 
-
-==============
 
 <h3>Configure DataWedge:</h3>
 You have two options to interact with the current version of the DataWedge:
@@ -31,12 +27,10 @@ Special configuration for option 2:
 ```<preference name="AndroidLaunchMode" value="singleTop" />```
 
 
-
-
 <h3>To Use:</h3>
 
 1) First, you need to "activate" the plugin and OPTIONALLY tell it what intent to listen for.  Default is _"com.bluefletch.motorola.datawedge.ACTION"_
-```
+```javascript
    document.addEventListener("deviceready", function(){ 
       if (window.datawedge) {
       	 datawedge.start(); //uses default
@@ -46,7 +40,7 @@ Special configuration for option 2:
 ```
 
 2) Register for callbacks for barcode scanning and/or magnetic stripe reads:
-```
+```javascript
    document.addEventListener("deviceready", function(){ 
        ...
        datawedge.registerForBarcode(function(data){
@@ -89,7 +83,6 @@ Special configuration for option 2:
 ```
 
 
-=============
 <h3>More API options:</h3>
 
 <h5>Data Wedge</h5>
@@ -103,8 +96,8 @@ Special configuration for option 2:
 <h5>Magstripe:</h5>
 * Unregister for barcode scans by calling: `datawedge.unregisterMagstripe()`
 
-==============
-Copyright 2014 BlueFletch Mobile
+
+#### Copyright 2014 BlueFletch Mobile
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
