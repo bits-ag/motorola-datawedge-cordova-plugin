@@ -1,4 +1,17 @@
- **⚠️ NOTICE:** This project is no longer actively maintained.
+ **⚠️ NOTICE:** The [original project](https://github.com/BlueFletch/motorola-datawedge-cordova-plugin) is no longer actively maintained.
+ 
+# Cordova Motorola DataWedge Plugin
+
+## bits ag changes
+The [original plugin](https://github.com/BlueFletch/motorola-datawedge-cordova-plugin) was changed to support both Android 14+ and older versions.
+For API Levels 33 and above the new Receiver parameter is added.
+For API levels below 33 the parameter is not added.
+
+The Android behavior changes for Android 14 (API Level 34) can be found [here](https://developer.android.com/about/versions/14/behavior-changes-14#runtime-receivers-exported)
+
+
+## Original Readme:
+**⚠️ NOTICE:** This project is no longer actively maintained.
  
 #### Cordova Motorola DataWedge Plugin
 
