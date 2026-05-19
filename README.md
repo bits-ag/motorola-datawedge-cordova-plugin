@@ -1,6 +1,6 @@
- **⚠️ NOTICE:** The [original project](https://github.com/BlueFletch/motorola-datawedge-cordova-plugin) is no longer actively maintained.
- 
-# Cordova Motorola DataWedge Plugin
+ # Cordova Motorola DataWedge Plugin
+
+## This version of the project is actively running on some customers Neptune Mobile Clients, check internal Wiki.
 
 ## bits ag changes
 The [original plugin](https://github.com/BlueFletch/motorola-datawedge-cordova-plugin) was changed to support both Android 14+ and older versions.
